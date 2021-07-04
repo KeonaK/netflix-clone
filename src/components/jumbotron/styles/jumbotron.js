@@ -23,7 +23,13 @@ export const Item = styled.div`
   overflow: hidden;
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  @media (max-width: 68.75rem) {
+    ${Item}:last-of-type h2 {
+      margin-bottom: 3.125rem;
+    }
+  }
+`;
 
 export const Sec = styled.div`
   width: 60%;
@@ -40,8 +46,12 @@ export const Title = styled.h1`
   line-height: 1.1;
   margin-bottom: 0.5rem;
 
-  @media (max-width: 37.5rem) {
-    font-size: 2.1875;
+  @media (max-width: 25rem) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 50rem) {
+    font-size: 2.5rem;
   }
 `;
 
@@ -50,8 +60,11 @@ export const SubTitle = styled.h2`
   font-weight: normal;
   line-height: normal;
 
-  @media (max-width: 37.5rem) {
+  @media (max-width: 25rem) {
     font-size: 1.125rem;
+  }
+  @media (max-width: 50rem) {
+    font-size: 1.25;
   }
 `;
 
