@@ -20,7 +20,7 @@ export const Column = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14.375rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(13.125rem, 1fr));
   grid-gap: 0.9375rem;
 `;
 
