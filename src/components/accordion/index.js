@@ -2,7 +2,6 @@ import React, { useState, useContext, createContext } from "react";
 import {
   Container,
   Inner,
-  Frame,
   Title,
   Item,
   Header,
@@ -23,10 +22,6 @@ Accordion.Title = function AccordionTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
-Accordion.Frame = function AccordionFrame({ children, ...restProps }) {
-  return <Frame {...restProps}>{children}</Frame>;
-};
-
 Accordion.Item = function AccordionItem({ children, ...restProps }) {
   const [toggleShow, setToggleShow] = useState(false);
 
@@ -44,12 +39,20 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
       onclick={() => setToggleShow((toggleShow) => !toggleShow)}
       {...restProps}
     >
+      {/* find the state we are currently in  */}
+      {/* <pre>{JSON.stringify(toggleShow, null, 2)}</pre> */}
       {children}
+      {toggleShow ? (
+        <img src="/images/icons/close-slim.png" alt="close" />
+      ) : (
+        <img src="/images/icons/add.png" alt="open" />
+      )}
     </Header>
   );
 };
 
-Accordtion.Body = function AccordionBody({ children, ...restProps }) {
+Accordion.Body = function AccordionBody({ children, ...restProps }) {
   const { toggleShow } = useContext(ToggleContext);
+  // if toggle is true return body
   return toggleShow ? <Body {...restProps}>{children}</Body> : null;
 };

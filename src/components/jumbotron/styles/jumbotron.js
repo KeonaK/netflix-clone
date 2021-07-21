@@ -4,6 +4,7 @@ import styled from "styled-components/macro";
 export const Inner = styled.div`
   display: flex;
   align-items: center;
+  // destructuring the prop we want to pass
   flex-direction: ${({ direction }) => direction};
   justify-content: space-between;
   max-width: 68.75rem;

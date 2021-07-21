@@ -16,11 +16,13 @@ export default function Jumbotron({
 }) {
   return (
     <Item {...restProps}>
+      {/* always get the children with a compound component */}
       <Inner direction={direction}>{children}</Inner>
     </Item>
   );
 }
 
+// compound components
 Jumbotron.Container = function JumbotronContainer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 };
