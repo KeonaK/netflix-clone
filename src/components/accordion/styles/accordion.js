@@ -5,40 +5,6 @@ export const Container = styled.div`
   border-bottom: 0.5em solid #222;
 `;
 
-export const Inner = styled.div`
-  display: flex;
-  padding: 4.375em 2.8125em;
-  flex-direction: column;
-  max-width: 50.9375rem;
-  margin: auto;
-`;
-
-export const Title = styled.h1`
-  font-size: 3.125rem;
-  line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: white;
-  text-align: center;
-  @media (max-width: 37.5rem) {
-    font-size: 2.1875rem;
-  }
-`;
-
-export const Item = styled.div`
-  color: white;
-  margin: auto;
-  margin-bottom: 0.625em;
-  max-width: 45.5rem;
-  width: 100%;
-  &:first-of-type {
-    margin-top: 3em;
-  }
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-`;
-
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
@@ -59,6 +25,39 @@ export const Header = styled.div`
       width: 1rem;
       font-size: 1rem;
     }
+  }
+`;
+
+export const Title = styled.h1`
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-align: center;
+  @media (max-width: 37.5rem) {
+    font-size: 2.1875rem;
+  }
+`;
+export const Inner = styled.div`
+  display: flex;
+  padding: 4.375em 2.8125em;
+  flex-direction: column;
+  max-width: 50rem;
+  margin: auto;
+`;
+
+export const Item = styled.div`
+  color: white;
+  margin: auto;
+  margin-bottom: 0.625em;
+  max-width: 50rem;
+  width: 100%;
+  &:first-of-type {
+    margin-top: 3em;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
   }
 `;
 
