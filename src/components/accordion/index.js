@@ -23,6 +23,7 @@ Accordion.Title = function AccordionTitle({ children, ...restProps }) {
 };
 
 Accordion.Item = function AccordionItem({ children, ...restProps }) {
+  // set to false to set the default to closed
   const [toggleShow, setToggleShow] = useState(false);
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion } from "../components";
+import { Accordion, EmailForm } from "../components";
 import faqData from "../cards/faq.json";
 
 export function FaqsContainer() {
@@ -12,6 +12,14 @@ export function FaqsContainer() {
           <Accordion.Body>{item.body}</Accordion.Body>
         </Accordion.Item>
       ))}
+
+      <EmailForm>
+        <EmailForm.Text>
+          Ready to watch? Enter your email to create or restart your membership.
+        </EmailForm.Text>
+        <EmailForm.Input placeholder="Email address" />
+        <EmailForm.Button>Get Started</EmailForm.Button>
+      </EmailForm>
     </Accordion>
   );
 }
