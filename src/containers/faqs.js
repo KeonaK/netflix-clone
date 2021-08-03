@@ -17,6 +17,7 @@ export function FaqsContainer() {
         <EmailForm.Text>
           Ready to watch? Enter your email to create or restart your membership.
         </EmailForm.Text>
+        <EmailForm.Break />
         <EmailForm.Input placeholder="Email address" />
         <EmailForm.Button>Get Started</EmailForm.Button>
       </EmailForm>

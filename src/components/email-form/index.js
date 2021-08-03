@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Input, Button, Text } from "./styles/email-form";
+import { Container, Input, Button, Text, Break } from "./styles/email-form";
 
 export default function EmailForm({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -20,4 +20,8 @@ EmailForm.Button = function EmailFormButton({ children, ...restProps }) {
 
 EmailForm.Text = function EmailFormText({ children, ...restProps }) {
   return <Text {...restProps}> {children}</Text>;
+};
+
+EmailForm.Break = function EmailFormBreak({ ...restProps }) {
+  return <Break {...restProps} />;
 };
