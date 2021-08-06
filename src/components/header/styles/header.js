@@ -25,10 +25,10 @@ export const Container = styled.div`
 export const Logo = styled.img`
   height: 2rem;
   width: 6.75rem;
-  margin-right: 2.5rem;
-  @media: (min-width: 90.5625) {
-    height: 2.8125rem;
+  // margin-right: 2.5rem;
+  @media: (min-width: 90.5625rem) {
     width: 10.4375rem;
+    height: 2.8125rem;
   }
 `;
 
