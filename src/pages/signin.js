@@ -4,8 +4,8 @@ import { HeaderContainer } from "../containers/header";
 import { Form } from "../components";
 
 export default function SignIn() {
-  const [emailAddress, setEmailAddress] = useState();
-  const [password, setPassword] = useState();
+  const [emailAddress, setEmailAddress] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   //add form validation
@@ -22,18 +22,18 @@ export default function SignIn() {
 
           <Form.Base onsubmit={handleSignin} method="POST">
             <Form.Input
-              type="Password"
-              autoComplete="off"
               placeholder="Email address"
               value={emailAddress}
               onChange={({ target }) => setEmailAddress(target.value)}
             />
             <Form.Input
+              type="Password"
+              autoComplete="off"
               placeholder="Password"
               value={password}
               onChange={({ target }) => setPassword(target.value)}
             />
-            <Form.Submit disabled={isInvalid} type="submite">
+            <Form.Submit disabled={isInvalid} type="submit">
               Sign In
             </Form.Submit>
           </Form.Base>
