@@ -1,5 +1,12 @@
 import React from "react";
+import { FooterContainer } from "../containers/footer";
+import { HeaderContainer } from "../containers/header";
 
 export default function SignIn() {
-  return <p>Hello from signin</p>;
+  return (
+    <>
+      <HeaderContainer>Hello from signin</HeaderContainer>
+      <FooterContainer />;
+    </>
+  );
 }
