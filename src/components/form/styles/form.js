@@ -85,7 +85,7 @@ export const Submit = styled.button`
   border: 0;
   color: white;
   cursor: pointer;
-
+  // has opacity until the form has valid info
   &:disabled {
     opacity: 0.5;
   }
