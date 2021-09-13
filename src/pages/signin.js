@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 import { FirebaseContext } from "../context/firebase";
 import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/header";
@@ -17,7 +17,7 @@ export default function SignIn() {
   const isInvalid = password === "" || emailAddress === "";
   const handleSignin = (event) => {
     event.preventDefault();
-    firebase
+    return firebase
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
       .then(() => {
@@ -36,14 +36,14 @@ export default function SignIn() {
           <Form.Title>Sign In</Form.Title>
           {error && <Form.Error>{error}</Form.Error>}
 
-          <Form.Base onsubmit={handleSignin} method="POST">
+          <Form.Base onSubmit={handleSignin} method="POST">
             <Form.Input
               placeholder="Email address"
               value={emailAddress}
               onChange={({ target }) => setEmailAddress(target.value)}
             />
             <Form.Input
-              type="Password"
+              type="password"
               autoComplete="off"
               placeholder="Password"
               value={password}
