@@ -17,7 +17,7 @@ export function SelectProfileContainer({ user, setProfile }) {
         <Profiles.List>
           <Profiles.User>
             <Profiles.Picture src={user.photoURL} />
-            <Profiles.Name user={user.displayName}></Profiles.Name>
+            <Profiles.Name>{user.displayName}</Profiles.Name>
           </Profiles.User>
         </Profiles.List>
       </Profiles>
