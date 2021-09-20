@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../components";
+import { Header, Profiles } from "../components";
 import * as ROUTES from "../constants/routes"; // need routes to render out the header
 import logo from "../NetflixLogo.svg";
 
