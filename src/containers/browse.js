@@ -2,7 +2,7 @@ import React from "react";
 import { SelectProfileContainer } from "./profiles";
 import { useContext, useState, useEffect } from "react";
 import { FirebaseContext } from "../context/firebase";
-import { Loading } from "../components";
+import { Header, Loading } from "../components";
 
 export function BrowseContainer({ slides }) {
   //state for the profile
@@ -18,12 +18,14 @@ export function BrowseContainer({ slides }) {
       setloading(false);
     }, 3000);
   }, [profile.displayName]);
+
   return profile.displayName ? (
-    loading ? (
-      <Loading src={user.photoURL} />
-    ) : (
-      <Loading.ReleaseBody />
-    )
+    <>
+      {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
+      <Header src="joker1">
+        <p>Test</p>
+      </Header>
+    </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />
   );
