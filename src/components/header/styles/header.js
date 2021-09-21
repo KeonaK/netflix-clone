@@ -50,3 +50,61 @@ export const ButtonLink = styled(ReactRouterLink)`
     background-color: #f40612;
   }
 `;
+
+export const Feature = styled(Container)`
+  padding: 9.375rem 0 31.25rem 0;
+  flex-direction: column;
+  align-items: normal;
+  width: 50%;
+
+  // @media (max-width: 68.75rem) {
+  //   display: none;
+  // }
+`;
+
+export const Text = styled.p`
+  color: white;
+  font-size: 1.375rem;
+  line-height: normal;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.45);
+`;
+
+export const FeatureCall = styled.h2`
+  color: white;
+  font-size: 3.125rem;
+  line-height: normal;
+  font-weight: bold;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.45);
+  margin: 0;
+`;
+
+// export const Logo = styled.img`
+//   height: 2.25rem;
+//   width: 8.375rem;
+//   margin-right: 2.5rem;
+
+//   @media (min-width: 90.56rem) {
+//     height: 2.812rem;
+//     width: 10.437rem;
+//   }
+// `;
+
+// export const PlayBtn = styled.button`
+//   box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+//   background-color: #e6e6e6;
+//   color: #000;
+//   border-width: 0;
+//   padding: 0.625rem 1.25rem;
+//   border-radius: 0.312rem;
+//   max-width: 8.125rem;
+//   font-weight: bold;
+//   font-size: 1.25rem;
+//   margin-top: 0.625rem;
+//   cursor: pointer;
+//   transition: background-color 0.5s ease;
+
+//   &:hover {
+//     background-color: #ff1e1e;
+//     color: white;
+//   }
+// `;
