@@ -57,9 +57,9 @@ export const Feature = styled(Container)`
   align-items: normal;
   width: 50%;
 
-  // @media (max-width: 68.75rem) {
-  //   display: none;
-  // }
+  @media (max-width: 68.75rem) {
+    display: none;
+  }
 `;
 
 export const Text = styled.p`
@@ -69,7 +69,7 @@ export const Text = styled.p`
   text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.45);
 `;
 
-export const FeatureCall = styled.h2`
+export const FeatureText = styled.h2`
   color: white;
   font-size: 3.125rem;
   line-height: normal;
@@ -77,17 +77,6 @@ export const FeatureCall = styled.h2`
   text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.45);
   margin: 0;
 `;
-
-// export const Logo = styled.img`
-//   height: 2.25rem;
-//   width: 8.375rem;
-//   margin-right: 2.5rem;
-
-//   @media (min-width: 90.56rem) {
-//     height: 2.812rem;
-//     width: 10.437rem;
-//   }
-// `;
 
 // export const PlayBtn = styled.button`
 //   box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);

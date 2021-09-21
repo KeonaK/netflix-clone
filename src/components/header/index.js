@@ -4,7 +4,7 @@ import {
   Background,
   Feature,
   Text,
-  FeatureCall,
+  FeatureText,
   Container,
   Logo,
   ButtonLink,
@@ -22,8 +22,8 @@ Header.Text = function HeaderText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
 };
 
-Header.FeatureCall = function FeatureCall({ children, ...restProps }) {
-  return <FeatureCall {...restProps}>{children}</FeatureCall>;
+Header.FeatureText = function HeaderFeatureText({ children, ...restProps }) {
+  return <FeatureText {...restProps}>{children}</FeatureText>;
 };
 
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
