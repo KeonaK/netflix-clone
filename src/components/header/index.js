@@ -4,8 +4,10 @@ import {
   Background,
   Feature,
   Text,
+  Link,
   FeatureText,
   Container,
+  Group,
   Logo,
   ButtonLink,
 } from "./styles/header";
@@ -22,12 +24,20 @@ Header.Text = function HeaderText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
 };
 
+Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
+  return <Link {...restProps}>{children}</Link>;
+};
+
 Header.FeatureText = function HeaderFeatureText({ children, ...restProps }) {
   return <FeatureText {...restProps}>{children}</FeatureText>;
 };
 
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
+};
+
+Header.Group = function HeaderGroup({ children, ...restProps }) {
+  return <Group {...restProps}>{children}</Group>;
 };
 
 Header.Logo = function HeaderLogo({ to, ...restProps }) {

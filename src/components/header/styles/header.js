@@ -7,6 +7,11 @@ export const Background = styled.div`
   background: url(${({ src }) =>
       src ? `../images/misc/${src}.jpg` : `../images/misc/home-bg2.jpg`})
     top left / cover no-repeat;
+
+  @media (max-width: 68.75rem) {
+    ${({ dontShowOnSmallViewPort }) =>
+      dontShowOnSmallViewPort && `background: none;`}
+  }
 `;
 
 export const Container = styled.div`
@@ -76,6 +81,25 @@ export const FeatureText = styled.h2`
   font-weight: bold;
   text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.45);
   margin: 0;
+`;
+
+export const Link = styled.p`
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.875rem;
+  font-weight: ${({ active }) => (active === "true" ? "700" : "normal")};
+  cursor: pointer;
+  &:hover {
+    font-weight: bold;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+`;
+
+export const Group = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 // export const PlayBtn = styled.button`
