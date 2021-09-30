@@ -13,7 +13,7 @@ export function SelectProfileContainer({ user, setProfile }) {
         </Header.Frame>
       </Header>
       <Profiles>
-        <Profiles.Title>Who's watching</Profiles.Title>
+        <Profiles.Title>Who's watching Netflix?</Profiles.Title>
         <Profiles.List>
           <Profiles.User
             //   setProfile with the displayName and photURL

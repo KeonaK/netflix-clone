@@ -102,6 +102,17 @@ export const Group = styled.div`
   align-items: center;
 `;
 
+export const Picture = styled.div`
+  display: flex;
+  align-items: center;
+  postion: relative;
+  margin-left: 1.25rem;
+
+  button {
+    cursor: pointer;
+  }
+`;
+
 // export const PlayBtn = styled.button`
 //   box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
 //   background-color: #e6e6e6;
