@@ -69,6 +69,7 @@ export function BrowseContainer({ slides }) {
             begins a slow descent into madness as he transforms into the
             criminal mastermind known as the Joker.
           </Header.Text>
+          <Header.PlayButton>Play</Header.PlayButton>
         </Header.Feature>
       </Header>
     </>

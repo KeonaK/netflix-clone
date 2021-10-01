@@ -177,7 +177,7 @@ export const SearchInput = styled.input`
   background-color: rgba(64, 64, 64, 0.5);
   color: white;
   border: 1px solid white;
-  transition: width 0.5s;
+  transition: width 0.45s;
   height: 1.875rem;
   font-size: 0.875rem;
   border-radius: 4px;
@@ -194,7 +194,7 @@ export const Profile = styled.div`
   display: flex;
   align-items: center;
   postion: relative;
-  margin-left: 1.25rem;
+  margin-left: 1.8rem;
 
   button {
     cursor: pointer;
@@ -203,5 +203,24 @@ export const Profile = styled.div`
   &:hover > ${Dropdown} {
     display: flex;
     flex-direction: column;
+  }
+`;
+
+export const PlayButton = styled.button`
+  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+  background-color: #e6e6e6;
+  color: #000;
+  border-width: 0;
+  padding: 0.625rem 1.25rem;
+  border-radius: 5px;
+  max-width: 14rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 1.875rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ff1e1e;
+    color: white;
   }
 `;
