@@ -142,6 +142,54 @@ export const Dropdown = styled.div`
     margin-top: 0;
 `;
 
+export const Search = styled.div`
+  display: flex;
+  align-items: center;
+
+  svg {
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (max-width: 43.75rem) {
+    display: none;
+  }
+`;
+
+export const SearchIcon = styled.button`
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    filter: brightness(0) invert(1);
+    width: 2rem;
+  }
+`;
+
+export const SearchInput = styled.input`
+  background-color: rgba(64, 64, 64, 0.5);
+  color: white;
+  border: 1px solid white;
+  transition: width 0.5s;
+  height: 1.875rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  margin-left: ${({ active }) => (active === true ? ".625rem" : "0")};
+  padding: ${({ active }) => (active === true ? "0 .625rem" : "0")};
+  opacity: ${({ active }) => (active === true ? "1" : "0")};
+  width: ${({ active }) => (active === true ? "12.5rem" : "0px")};
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+`;
+
 export const Profile = styled.div`
   display: flex;
   align-items: center;

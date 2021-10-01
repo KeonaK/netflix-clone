@@ -7,6 +7,7 @@ import * as ROUTES from "../constants/routes";
 import logo from "../NetflixLogo.svg";
 
 export function BrowseContainer({ slides }) {
+  const [searchTerm, setSearchTerm] = useState("");
   //state for the profile
   const [profile, setProfile] = useState({});
 
@@ -36,6 +37,10 @@ export function BrowseContainer({ slides }) {
             <Header.TextLink>Films</Header.TextLink>
           </Header.Group>
           <Header.Group>
+            <Header.Search
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+            />
             <Header.Profile>
               <Header.Picture src={user.photoURL} />
               <Header.Dropdown>
