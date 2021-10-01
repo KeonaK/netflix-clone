@@ -119,6 +119,27 @@ export const Dropdown = styled.div`
   width: 6.25rem;
   top: 2rem;
   right: 0.625rem;
+
+  ${Group}:last-of-type ${Link} {
+    cursor: pointer;
+  }
+  ${Group} {
+    margin-bottom: .625rem;;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+   
+    ${Link}, ${Picture} {
+      cursor: default;
+    }
+  }
+  button {
+    margin-right: .625rem;
+  }
+  p {
+    font-size: .75rem;
+    margin-bottom: 0;
+    margin-top: 0;
 `;
 
 export const Profile = styled.div`
