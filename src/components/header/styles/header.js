@@ -102,7 +102,26 @@ export const Group = styled.div`
   align-items: center;
 `;
 
-export const Picture = styled.div`
+export const Picture = styled.button`
+  background: url(${({ src }) => src});
+  background-size: contain;
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+`;
+
+export const Dropdown = styled.div`
+  display: none;
+  background-color: black;
+  position: absolute;
+  padding: 0.625rem;
+  width: 6.25rem;
+  top: 2rem;
+  right: 0.625rem;
+`;
+
+export const Profile = styled.div`
   display: flex;
   align-items: center;
   postion: relative;
@@ -111,24 +130,9 @@ export const Picture = styled.div`
   button {
     cursor: pointer;
   }
+
+  &:hover > ${Dropdown} {
+    display: flex;
+    flex-direction: column;
+  }
 `;
-
-// export const PlayBtn = styled.button`
-//   box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
-//   background-color: #e6e6e6;
-//   color: #000;
-//   border-width: 0;
-//   padding: 0.625rem 1.25rem;
-//   border-radius: 0.312rem;
-//   max-width: 8.125rem;
-//   font-weight: bold;
-//   font-size: 1.25rem;
-//   margin-top: 0.625rem;
-//   cursor: pointer;
-//   transition: background-color 0.5s ease;
-
-//   &:hover {
-//     background-color: #ff1e1e;
-//     color: white;
-//   }
-// `;

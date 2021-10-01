@@ -8,6 +8,9 @@ import {
   FeatureText,
   Container,
   Group,
+  Picture,
+  Dropdown,
+  Profile,
   Logo,
   ButtonLink,
 } from "./styles/header";
@@ -50,4 +53,16 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
   return <ButtonLink {...restProps}>{children}</ButtonLink>;
+};
+
+Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
+  return <Dropdown {...restProps}>{children}</Dropdown>;
+};
+
+Header.Profile = function HeaderProfile({ children, ...restProps }) {
+  return <Profile {...restProps}>{children}</Profile>;
+};
+
+Header.Picture = function HeaderPicture({ src, ...restProps }) {
+  return <Picture {...restProps} src={`images/users/${src}.png`} />;
 };
